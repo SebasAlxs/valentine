@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌻 Mi San Valentín 🌻</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div id="inicio" class="screen">
+        <h1>Tengo algo especial para el amor de mi vida ... 💌</h1>
+        <button onclick="mostrarMensaje()">Descúbrelo</button>
+    </div>
+
+    <div id="mensaje" class="screen" style="display: none;">
+        <img src="https://media.tenor.com/dnkXvJVb5cAAAAAM/bear-blow-a-kiss.gif" alt="Love Gif">
+        <h1>¿Quiere ser mi Valentín? 🤍</h1>
+        <div style="display: flex; gap: 20px; position: relative;">
+            <button onclick="aceptar()">Sí 🤍</button>
+            <button id="botonNo" ontouchstart="moverBoton(this)" onmouseover="moverBoton(this)">No 💔</button>
+        </div>
+    </div>
+
+    <div id="girasol" class="screen">
+        <div class="flower">
+            <div class="petal" style="--rotation: 0deg"></div>
+            <div class="petal" style="--rotation: 30deg"></div>
+            <div class="petal" style="--rotation: 60deg"></div>
+            <div class="petal" style="--rotation: 90deg"></div>
+            <div class="petal" style="--rotation: 120deg"></div>
+            <div class="petal" style="--rotation: 150deg"></div>
+            <div class="petal" style="--rotation: 180deg"></div>
+            <div class="petal" style="--rotation: 210deg"></div>
+            <div class="petal" style="--rotation: 240deg"></div>
+            <div class="petal" style="--rotation: 270deg"></div>
+            <div class="petal" style="--rotation: 300deg"></div>
+            <div class="petal" style="--rotation: 330deg"></div>
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="smile"></div>
+            </div>
+        </div>
+        <div class="stem">
+            <div class="leaf left"></div>
+            <div class="leaf right"></div>
+        </div>
+        <div class="pot"></div>
+        <h1>Un detalle chiquito para un amor infinito 🤍</h1>
+    </div>
+
+    <div id="juego-memoria" class="screen" style="display: none;">
+        <h1>Un pequeño juego para mi niñita 🤍</h1>
+        <div class="memory-game">
+            <div class="memory-card" data-framework="amor">
+                <div class="front-face">❤️</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="amor">
+                <div class="front-face">❤️</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="beso">
+                <div class="front-face">💋</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="beso">
+                <div class="front-face">💋</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="flor">
+                <div class="front-face">🌹</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="flor">
+                <div class="front-face">🌹</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="regalo">
+                <div class="front-face">🎁</div>
+                <div class="back-face">?</div>
+            </div>
+            <div class="memory-card" data-framework="regalo">
+                <div class="front-face">🎁</div>
+                <div class="back-face">?</div>
+            </div>
+        </div>
+        <button onclick="mostrarGirasol()">Continuar ❤️</button>
+    </div>
+</body>
+</html>
